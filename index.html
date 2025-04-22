@@ -4,14 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manglesh Kumar - Resume</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #F5F5F5;
+      color: #000;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #6be6c1;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .tagline {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    .contact {
+      margin-top: 10px;
+    }
+
+    .profile-photo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    section {
+      background-color: rgb(116, 123, 219);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #003366;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #83b8ec;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div style="display: flex; align-items: center;">
+    <div class="header-container">
       <div>
-        <h1>Manglesh Kumar</h1>
-        <h2>Learning Today, Leading Tomorrow</h2>
-        <section>
+        <h1 class="name">Manglesh Kumar</h1>
+        <h2 class="tagline">Learning Today, Leading Tomorrow</h2>
+        <section class="contact">
           <h3>Contact</h3>
           <address>
             <p>Address:<br>
@@ -25,41 +100,35 @@
           </address>
         </section>
       </div>
-      <div style="margin-left: 20px;">
-        <img src="./pp30.png" alt="Manglesh Kumar Photo" width="150" height="150">
+      <div class="profile-photo">
+        <img src="./pp30.png" alt="Manglesh Kumar Photo">
       </div>
     </div>
   </header>
 
-  <section>
+  <section class="summary">
     <h3>Summary / Career Objective</h3>
-    <p>
-      <ul>
-        <LI>I aspire to build multiple successful ventures.</LI>
-        <LI>Attain financial independence before completing my formal education.</LI>
-        <LI>My goals include developing multiple investments.</LI>
-        <LI>Achieving early retirement, allowing me the freedom to pursue my passions and personal growth on my own terms.</LI>
-      </ul>
-    </p>
-  </section>
-
-  <section>
-    <h3>Education</h3>
     <ul>
-      <li>
-        <strong>High School (2021)</strong><br>
-        Little Flower School, Rapti Nagar, Gorakhpur<br>
-        Percentage: 98%
-      </li>
-      <li>
-        <strong>Intermediate</strong><br>
-        Little Flower School, Rapti Nagar, Gorakhpur<br>
-        Percentage: 91.6%
-      </li>
+      <li>I aspire to build multiple successful ventures.</li>
+      <li>Attain financial independence before completing my formal education.</li>
+      <li>My goals include developing multiple investments.</li>
+      <li>Achieving early retirement, allowing me the freedom to pursue my passions and personal growth on my own terms.</li>
     </ul>
   </section>
 
-  <section>
+  <section class="education">
+    <h3>Education</h3>
+    <ul>
+      <li><strong>High School (2021)</strong><br>
+        Little Flower School, Rapti Nagar, Gorakhpur<br>
+        Percentage: 98%</li>
+      <li><strong>Intermediate</strong><br>
+        Little Flower School, Rapti Nagar, Gorakhpur<br>
+        Percentage: 91.6%</li>
+    </ul>
+  </section>
+
+  <section class="extracurricular">
     <h3>Extracurricular Activities</h3>
     <ul>
       <li>Multiple awards at the school level in football</li>
